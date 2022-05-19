@@ -1,4 +1,4 @@
-# rate-prediction-test
+# Greenscreens.ai homework
 
 You should predict rate per mile using your model, features etc.
 
