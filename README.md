@@ -4,7 +4,9 @@ You should predict rate per mile using your model, features etc.
 
 Example code returns average rate as prediction, it gives 34.85% accuracy.
 
-Rate quality prediction is measured by MAPE (mean absolute percentage error): <img src="https://raw.githubusercontent.com/GreenScreens-company/GS-homework/main/equaimage.png" align="center" border="0" alt="\sum_{i}^{} {\frac{1}{N} \bigg | {1 - \frac{Rate_{predicted}^{i}}{Rate_{real}^{i}}}\bigg | } * 100 \%" width="235" />
+Rate quality prediction is measured by MAPE (mean absolute percentage error): 
+
+$$\ \sum_{i=1}^{N} {\frac{1}{N} \bigg | {1 - \frac{Rate_{predicted}^{i}}{Rate_{real}^{i}}}\bigg | } * 100 $$
 
 There are three files with data: train.csv, validation.csv (validation set infront of train in term of date) and test.csv (for your prediction)
 We have divided all US territory into KMA (Key Market Regions). These regions grouped by similar market conditions that are inside each market. Try to enhance the current Rate Engine by pushing knowledge about origin and destination KMA into model. 
